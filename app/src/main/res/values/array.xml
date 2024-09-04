@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- res/values/arrays.xml -->
+
+        <string-array name="reasons_array">
+            <item>Event</item>
+            <item>Medical</item>
+            <item>Sports</item>
+            <!-- Add more reasons as needed -->
+        </string-array>
+    </resources>

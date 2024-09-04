@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/img">
+
+    <TextView
+        android:layout_width="258dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Student details"
+        android:textColor="@color/material_dynamic_primary20"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:background="#ACA1A1" />
+
+    <!-- CardView containing the form elements -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/custom_edittext2"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="10dp"
+                android:hint="Student Name"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/usn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/custom_edittext2"
+                android:drawableLeft="@drawable/baseline_confirmation_number_24"
+                android:drawablePadding="10dp"
+                android:hint="USN"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/Startdate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/custom_edittext2"
+                android:drawableLeft="@drawable/baseline_calendar_month_24"
+                android:drawablePadding="10dp"
+                android:hint="Start date: MM/dd/yyyy"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/Enddate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/custom_edittext2"
+                android:drawableLeft="@drawable/baseline_calendar_month_24"
+                android:drawablePadding="10dp"
+                android:hint="End date: MM/dd/yyyy"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="25dp"
+                android:hint="@string/Select"
+                android:textColorHint="@color/black"
+                app:startIconDrawable="@drawable/baseline_mark_as_unread_24"
+                app:startIconTint="#800080">
+
+                <AutoCompleteTextView
+                    android:id="@+id/reason"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/custom_edittext2"
+                    android:drawableLeft="@drawable/baseline_person_add_alt_24"
+                    android:drawablePadding="10dp"
+                    android:inputType="none"
+                    android:paddingLeft="10dp"
+                    android:textSize="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/certificate"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/custom_edittext2"
+                android:drawableLeft="@drawable/baseline_upload_file_24"
+                android:drawablePadding="10dp"
+                android:hint="Certificate"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/Coordinator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/custom_edittext2"
+                android:drawableLeft="@drawable/baseline_person_add_alt_1_24"
+                android:drawablePadding="10dp"
+                android:hint="Coordinator"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/recipient_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/custom_edittext2"
+                android:drawableLeft="@drawable/baseline_email_24"
+                android:drawablePadding="10dp"
+                android:hint="Recipient Email"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="128dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/design_default_color_primary_variant"
+        android:onClick="btnHelloClicked"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</LinearLayout>

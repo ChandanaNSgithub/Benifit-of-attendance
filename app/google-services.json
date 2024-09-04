@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "281576143058",
+    "project_id": "shortage-f3789",
+    "storage_bucket": "shortage-f3789.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281576143058:android:fdf4e6cdc25b6d6010950b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDygP1M19kJTvP_QoNmQEbSLAx9CsHTnr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
